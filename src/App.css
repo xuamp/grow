@@ -1,0 +1,25 @@
+.presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #e5e5f7;
+  opacity: 0.1;
+  background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7),
+    repeating-radial-gradient(
+      circle at center center,
+      #444cf7,
+      #444cf7,
+      30px,
+      transparent 60px,
+      transparent 30px
+    );
+  background-blend-mode: multiply;
+}
+
+.presentacion-imagen {
+  width: 70%;
+  margin-top: 15px;
+  opacity: 10 !important;
+}
+

@@ -1,0 +1,38 @@
+.CardM1 {
+  background-color: rgb(87, 142, 32);
+  border: 2px solid rgb(194, 221, 168);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 15px;
+  margin-right: 5px;
+  max-width: 300px;
+}
+
+.CardM1 img {
+  width: 100%;
+}
+
+.CardM2 img {
+  width: 95%;
+}
+
+.CardM2 {
+  background-color: rgb(87, 142, 32);
+  border: 2px solid rgb(194, 221, 168);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 15px;
+  margin-right: 5px;
+  width: 85%;
+}

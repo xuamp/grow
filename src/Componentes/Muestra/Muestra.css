@@ -1,0 +1,11 @@
+.scroll-x{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 12px;
+    padding: 20px;
+    height: auto;
+}
+
+

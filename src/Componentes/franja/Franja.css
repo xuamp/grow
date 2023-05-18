@@ -1,0 +1,23 @@
+.Franja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    height: 20svh;
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+
+.franja-icono{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.franja-icono i{
+    font-size: 1.8em;
+}
+
+.franja-icono p{
+    font-size: 1em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
