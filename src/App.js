@@ -3,8 +3,8 @@ import "./App.css";
 import Navbar from "./Componentes/Navbar/Navbar";
 import Principal from "./Componentes/Principal/Principal";
 import ContactoPage from "./Componentes/ContactoPage/ContactoPage";
-import TiendaPage from "./Componentes/TiengaPage/TiendaPage";
 import DetallePage from "./Componentes/DetallePage/DetallePage";
+import ProductosPage from "./Componentes/ProductosPage/ProductosPage";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Principal />} />
         <Route path="/contacto" element={<ContactoPage />} />
-        <Route path="/productos" element={<TiendaPage />} />
+        <Route path="/productos" element={<ProductosPage />} />
         <Route path="/detalle" element={<DetallePage />} />
       </Routes>
       </BrowserRouter>
