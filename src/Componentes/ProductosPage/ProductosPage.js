@@ -20,7 +20,7 @@ function ProductosPage() {
         return prod;
       });
       setLista(product);
-    });
+    }); 
   }, []);
 
   return (
