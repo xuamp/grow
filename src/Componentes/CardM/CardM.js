@@ -8,7 +8,7 @@ function CardM(props) {
     <div className={`CardM` + clase}>
         <img src={imagen} alt="cate" />
         <p>{categoria}</p>
-        <Link to="/productos"><button>Ver Mas</button></Link>
+        <Link to={`/categoria/${categoria}`}><button>Ver Mas</button></Link>
     </div>
   );
 }

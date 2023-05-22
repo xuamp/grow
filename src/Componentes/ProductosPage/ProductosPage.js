@@ -3,12 +3,16 @@ import "./ProductosPage.css";
 import { productCollection } from "../FirebaseConfig";
 import { getDocs } from "firebase/firestore";
 import CardM from "../CardM/CardM";
+import { useParams } from "react-router-dom";
 
 function ProductosPage() {
   const [lista, setLista] = useState([]);
 
+  const valor = useParams();
+
   useEffect(() => {
     const pedido = getDocs(productCollection);
+
     pedido.then((res) => {
       const product = res.docs.map((doc) => {
         const prod = doc.data();
