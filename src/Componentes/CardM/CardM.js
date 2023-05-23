@@ -1,14 +1,25 @@
 import "./CardM.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function CardM(props) {
+  const { clase, imagen, categoria, nombre, detalle, id, precio } = props;
 
-  const { clase, imagen, categoria } = props
+  console.log(categoria);
+
   return (
     <div className={`CardM` + clase}>
-        <img src={imagen} alt="cate" />
-        <p>{categoria}</p>
-        <Link to={`/productos/${categoria}`}><button>Ver Mas</button></Link>
+      <img src={imagen} alt="cate" />
+      <p>{nombre}</p>
+      <p>{precio}</p>
+      {detalle ? (
+        <Link to={`/detalle/${id}`}>
+          <button>Detalle</button>
+        </Link>
+      ) : (
+        <Link to={`/productos/${categoria}`}>
+          <button>Ver Mas</button>
+        </Link>
+      )}
     </div>
   );
 }

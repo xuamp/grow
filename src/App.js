@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Principal />} />
         <Route path="/contacto" element={<ContactoPage />} />
-        <Route path="/productos/:categoria" element={<ProductosPage />} />
-        <Route path="/detalle" element={<DetallePage />} />
+        <Route path="/productos/:catego" element={<ProductosPage />} />
+        <Route path="/detalle/:identi" element={<DetallePage />} />
       </Routes>
       </BrowserRouter>
     </div>
