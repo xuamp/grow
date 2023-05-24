@@ -1,15 +1,28 @@
 import { useState } from "react";
 import CardM from "../CardM/CardM";
-import { Mercaderia } from "../Mercaderia";
 import "./Muestra.css";
+import { productCollection } from "../FirebaseConfig";
 import { useEffect } from "react";
+import { getDocs } from "firebase/firestore";
 
 function Muestra() {
   const [prod, setProd] = useState([]);
   const [carga, setCarga] = useState(false);
+
   useEffect(() => {
-    const aux = [...Mercaderia];
-    setProd(aux);
+    const getProductosC = () => {
+      const pedido2 = getDocs(productCollection);
+
+      pedido2.then((res) => {
+        const product2 = res.docs.map((doc) => {
+          const produ = doc.data();
+          produ.id = doc.id;
+          return produ;
+        });
+        setProd(product2);
+      });
+    };
+    getProductosC();
     setCarga(true);
   }, []);
 
@@ -18,23 +31,13 @@ function Muestra() {
       <p>Nuestros Productos</p>
       {carga ? (
         <div className="scroll-x">
-          <CardM
-            clase={1}
-            imagen={prod[0].foto}
-            categoria={prod[0].categoria}
-          />
-          <CardM
-            clase={1}
-            imagen={prod[0].foto}
-            categoria={prod[0].categoria}
-          />
-          <CardM
-            clase={1}
-            imagen={prod[0].foto}
-            categoria={prod[0].categoria}
-          />
+          {prod.map((res) => (
+            <CardM clase={1} imagen={res.foto} categoria={res.categoria} />
+          ))}
         </div>
-      ) : null}
+      ) : (
+        <p>Cargando...</p>
+      )}
     </div>
   );
 }
