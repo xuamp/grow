@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function CardM(props) {
   const { clase, imagen, categoria, nombre, detalle, id, precio } = props;
 
-  console.log(categoria);
+
 
   return (
     <div className={`CardM` + clase}>

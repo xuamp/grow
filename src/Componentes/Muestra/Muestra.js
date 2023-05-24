@@ -32,7 +32,7 @@ function Muestra() {
       {carga ? (
         <div className="scroll-x">
           {prod.map((res) => (
-            <CardM clase={1} imagen={res.foto} categoria={res.categoria} />
+            <CardM clase={1} imagen={res.foto} categoria={res.categoria} detalle={true} />
           ))}
         </div>
       ) : (
