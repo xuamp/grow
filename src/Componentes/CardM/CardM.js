@@ -11,6 +11,7 @@ function CardM(props) {
       <img src={imagen} alt="cate" />
       <p>{nombre}</p>
       <p>{precio}</p>
+      <p>{categoria}</p>
       {detalle ? (
         <Link to={`/detalle/${id}`}>
           <button>Detalle</button>

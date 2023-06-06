@@ -1,11 +1,13 @@
 import "./ItemDetalle.css";
 
 function ItemDetalle(props) {
+  const { titulo, valor, foto } = props;
+
   return (
     <div className="ItemDetalle">
-      <img src="" alt="" />
-      <p>Titulo</p>
-      <p>Valor</p>
+      <img src={foto} alt="" />
+      <p>{titulo}</p>
+      <p>{valor}</p>
       <button>Comprar</button>
       <div className="descripcion">
         <div className="descripcion titulo">Descripcion</div>
