@@ -30,7 +30,7 @@ function DetallePage() {
   return (
     <div className="DetallePage">
       {deta.map((res) => (
-        <ItemDetalle titulo={res.nombre} valor={res.precio} foto={res.foto} />
+        <ItemDetalle titulo={res.nombre} valor={res.precio} foto={res.foto} descripcion={res.descripcion} />
       ))}
     </div>
   );
