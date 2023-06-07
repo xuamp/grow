@@ -8,11 +8,13 @@ function ItemDetalle(props) {
       <div className="detalleContenedor">
       <img src={foto} alt="foto" />
       <p>{titulo}</p>
-      <p>{valor}</p>
-      <button>Comprar</button>
+      <p>$ {valor}</p>
+      <button className="boton-compra">Comprar</button>
+      <hr className="division"></hr>
       <div className="descripcion">
-        <div className="descripcion titulo">Descripcion</div>
-        <div className="descripcion cuerpo">
+        <div className="titulodes">Descripcion</div>
+        <hr className="division"></hr>
+        <div className="cuerpodes">
           <p>
            {descripcion}
           </p>
