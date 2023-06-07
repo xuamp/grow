@@ -5,7 +5,8 @@ function ItemDetalle(props) {
 
   return (
     <div className="ItemDetalle">
-      <img src={foto} alt="" />
+      <div className="detalleContenedor">
+      <img src={foto} alt="foto" />
       <p>{titulo}</p>
       <p>{valor}</p>
       <button>Comprar</button>
@@ -16,6 +17,7 @@ function ItemDetalle(props) {
            {descripcion}
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
