@@ -21,6 +21,8 @@ function ItemDetalle(props) {
         </div>
       </div>
       </div>
+
+      
     </div>
   );
 }
