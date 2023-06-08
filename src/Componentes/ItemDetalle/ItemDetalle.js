@@ -1,3 +1,4 @@
+import Contador from "../Contador/Contador";
 import "./ItemDetalle.css";
 
 function ItemDetalle(props) {
@@ -9,6 +10,7 @@ function ItemDetalle(props) {
       <img src={foto} alt="foto" />
       <p>{titulo}</p>
       <p>$ {valor}</p>
+      <Contador />
       <button className="boton-compra">Comprar</button>
       <hr className="division"></hr>
       <div className="descripcion">
