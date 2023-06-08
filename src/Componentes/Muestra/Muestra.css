@@ -4,8 +4,16 @@
     flex-wrap: nowrap;
     overflow-x: scroll;
     margin: 12px;
-    padding: 20px;
+    padding: 0.1em;
     height: auto;
+}
+
+.Muestra{
+padding-bottom: 2em;
+}
+
+.muestra-titu p {
+color: blue;
 }
 
 

@@ -13,24 +13,51 @@
   padding: 15px;
   margin-right: 6px;
   max-width: 300px;
+  min-width: 6em;
 }
-.CardM1  p {
+.CardM1 p {
   margin: 0.05em;
   font-size: 1.5em;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
-.CardM2  p {
+.CardM3 {
+  background-color: rgb(87, 142, 32);
+  border: 2px solid rgb(80, 122, 40);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(194, 221, 168);
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 6px;
+  min-width: 12em;
+  height: auto;
+  padding: 1em;
+}
+
+.CardM3 p {
   margin: 0.05em;
   font-size: 1.5em;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
+}
+
+.CardM2 p {
+  margin: 0.05em;
+  font-size: 1.5em;
+  font-family: "Kanit", sans-serif;
+}
+
+.CardM3 img {
+  width: 100%;
 }
 
 .boton-vermas {
   border-radius: 0.45em;
   font-size: 1em;
   margin-top: 0.8em;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .CardM1 img {
   width: 100%;

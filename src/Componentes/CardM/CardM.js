@@ -14,7 +14,7 @@ function CardM(props) {
       <p>{categoria}</p>
       {detalle ? (
         <Link to={`/detalle/${id}`}>
-          <button>Detalle</button>
+          <button className="boton-vermas">Detalle</button>
         </Link>
       ) : (
         <Link to={`/productos/${categoria}`}>

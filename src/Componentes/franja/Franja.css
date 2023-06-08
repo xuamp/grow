@@ -9,15 +9,20 @@
 }
 
 .franja-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  font-size: 1.2em;
+  width: 50%;
 }
 
 .franja-icono i {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .franja-icono p {
-  font-size: 1em;
+  font-size: 1.2em;
+  
   font-family: "Kanit", sans-serif;
 }

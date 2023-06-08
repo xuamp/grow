@@ -28,12 +28,12 @@ function Muestra() {
 
   return (
     <div className="Muestra">
-      <p>Nuestros Productos</p>
+      <p className="muestra-titu">Nuestros Productos</p>
       {carga ? (
         <div className="scroll-x">
           {prod.map((res) => (
             <CardM
-              clase={1}
+              clase={3}
               imagen={res.foto}
               categoria={res.categoria}
               detalle={true}
