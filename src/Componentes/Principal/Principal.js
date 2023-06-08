@@ -11,13 +11,13 @@ function Principal() {
       <Home />
       <Franja />
       <div className="Cards">
-        <CardM clase={1} imagen={"imagenes/cate1.jpg"} categoria={"pipas"} />
+        <CardM clase={1} imagen={"imagenes/cate1.jpg"} categoria={"Pipas"} />
         <CardM
           clase={1}
           imagen={"imagenes/cate2.jpg"}
-          categoria={"fertilizantes"}
+          categoria={"Fertilizantes"}
         />
-        <CardM clase={2} imagen={"imagenes/cate3.jpg"} categoria={"pikachus"} />
+        <CardM clase={2} imagen={"imagenes/cate3.jpg"} categoria={"Pikachus"} />
       </div>
       <Muestra />
       <Contacto />

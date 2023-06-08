@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   width: 36%;
+  border: 2px solid rgb(194, 221, 168);
   height: auto;
   align-items: center;
   justify-content: center;
@@ -13,7 +14,24 @@
   margin-right: 6px;
   max-width: 300px;
 }
+.CardM1  p {
+  margin: 0.05em;
+  font-size: 1.5em;
+  font-family: 'Kanit', sans-serif;
+}
 
+.CardM2  p {
+  margin: 0.05em;
+  font-size: 1.5em;
+  font-family: 'Kanit', sans-serif;
+}
+
+.boton-vermas {
+  border-radius: 0.45em;
+  font-size: 1em;
+  margin-top: 0.8em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .CardM1 img {
   width: 100%;
 }

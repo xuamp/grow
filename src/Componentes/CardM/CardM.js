@@ -18,7 +18,7 @@ function CardM(props) {
         </Link>
       ) : (
         <Link to={`/productos/${categoria}`}>
-          <button>Ver Mas</button>
+          <button className="boton-vermas">Ver Mas</button>
         </Link>
       )}
     </div>

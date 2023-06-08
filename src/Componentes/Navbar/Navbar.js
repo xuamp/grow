@@ -8,7 +8,7 @@ const [ isOpen, setIsOpen ] = useState(false)
   return (
     <div className="navbar">
         <div className='navbar-logo'>
-            <p>LOGO</p>
+            <Link to="/"><img src='imagenes/logo-trans.png' alt='logo' /></Link>
         </div>
         <div className={`navbar-items ${isOpen && "open"}`}>
             <Link to="/" className='losa'>Inicio</Link>
