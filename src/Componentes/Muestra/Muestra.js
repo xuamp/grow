@@ -28,7 +28,7 @@ function Muestra() {
 
   return (
     <div className="Muestra">
-      <p className="muestra-titu">Nuestros Productos</p>
+      <p>Nuestros Productos</p>
       {carga ? (
         <div className="scroll-x">
           {prod.map((res) => (
