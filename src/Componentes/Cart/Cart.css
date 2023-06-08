@@ -1,0 +1,32 @@
+.Cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.carrito-ico {
+    font-size: 2em;
+    position: absolute;
+}
+
+.carrito-num {
+    position: absolute;
+    color: rgb(253, 251, 251);
+    border: 1px solid black;
+    border-radius: 2em;
+    height: 1.4em;
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    left: 65%;
+    background-color: red;
+    bottom: 55%;
+    font-weight: 900;
+}
+
+.carrito-num p {
+    margin: 0;
+}

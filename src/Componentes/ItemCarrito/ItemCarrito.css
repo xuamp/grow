@@ -1,0 +1,37 @@
+.ItemCarrito {
+  width: 90%;
+  display: flex;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+  background-color: aliceblue;
+}
+
+.ItemCarrito-img {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ItemCarrito-datos {
+  text-align: start;
+  width: 55%;
+}
+
+.ItemCarrito-datos p:first-child {
+  text-decoration: underline red;
+  font-size: 1.3em;
+}
+
+.ItemCarrito-datos button {
+  background-color: rgb(218, 206, 206);
+  font-size: 1.5em;
+  border-radius: 0.5em;
+  margin-bottom: 0.3em;
+}
+
+.fito {
+  width: 100%;
+}

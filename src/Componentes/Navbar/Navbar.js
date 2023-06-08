@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import Cart from '../Cart/Cart';
 
 function Navbar() {
 const [ isOpen, setIsOpen ] = useState(false)
@@ -13,8 +14,9 @@ const [ isOpen, setIsOpen ] = useState(false)
         <div className={`navbar-items ${isOpen && "open"}`}>
             <Link to="/" className='losa'>Inicio</Link>
             <Link to="/contacto" className='losa'>Contacto</Link>
-            <Link to="/productos" className='losa'>Tienda</Link>
+            <Link to="/carrito" className='losa'>Tienda</Link>
         </div>
+        <Cart />
         <div className={`navbar-toogle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}
         >
             <span></span>
