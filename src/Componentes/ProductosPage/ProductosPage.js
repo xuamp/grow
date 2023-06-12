@@ -41,11 +41,13 @@ function ProductosPage() {
     catego ? getProductosF() : getProductosC();
   }, [catego]);
 
+  console.log(lista)
+
   return (
     <div className="ProductosPage">
       <p>Nuestros Productos</p>
       {lista.map((doc) => (
-        <CardM categoria={doc.categoria} imagen={doc.foto} clase={2} detalle={"si"} precio={doc.precio} id={doc.id}/>
+        <CardM categoria={doc.categoria} imagen={doc.foto} clase={2} detalle={true} precio={doc.precio} id={doc.id}/>
       ))}
     </div>
   );
